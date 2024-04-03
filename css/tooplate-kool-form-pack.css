@@ -1,0 +1,598 @@
+/*
+
+Tooplate 2136 Vivek Chauhan
+
+https://www.tooplate.com/view/2136-kool-form-pack
+
+Bootstrap 5 Form Pack Template
+
+*/
+
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --body-bg-color:                #181717;
+  --white-color:                  #ffffff;
+  --primary-color:                #E07A5F;
+  --secondary-color:              #F2CC8F;
+  --section-bg-color:             #f0f8ff;
+  --custom-btn-bg-color:          #E07A5F;
+  --custom-btn-bg-hover-color:    #F2CC8F;
+  --dark-color:                   #000000;
+  --p-color:                      #717275;
+  --link-hover-color:             #F2CC8F;
+
+  --body-font-family:             'Poppins', sans-serif;
+  --heading-font-family:          'Unbounded', sans-serif;
+
+  --h1-font-size:                 62px;
+  --h2-font-size:                 36px;
+  --h3-font-size:                 28px;
+  --h4-font-size:                 24px;
+  --h5-font-size:                 22px;
+  --h6-font-size:                 20px;
+  --p-font-size:                  18px;
+  --menu-font-size:               16px;
+  --btn-font-size:                14px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
+
+  --font-weight-normal:           400;
+  --font-weight-medium:           500;
+  --font-weight-bold:             700;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: var(--body-font-family); 
+}
+
+
+/*---------------------------------------
+  TYPOGRAPHY               
+-----------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+ul li {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+a, 
+button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+
+a {
+  display: inline-block;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+.section-bg {
+  background-color: var(--section-bg-color);
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.page-404-title {
+  color: var(--primary-color);
+  font-size: 100px;
+}
+
+.page-404-title + h3 {
+  color: var(--secondary-color);
+}
+
+
+/*---------------------------------------
+  CUSTOM BUTTON               
+-----------------------------------------*/
+.custom-btn {
+  background: var(--custom-btn-bg-color);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  transition: all 0.3s;
+  padding: 6px 18px;
+}
+
+.custom-btn:hover {
+  background: var(--custom-btn-bg-hover-color);
+  color: var(--white-color);
+}
+
+.custom-border-btn {
+  background: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.custom-border-btn:hover {
+  background: var(--secondary-color);
+  border-color: transparent;
+  color: var(--white-color);
+}
+
+.custom-btn-bg-white {
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+
+.custom-btn-group .link {
+  color: var(--white-color);
+  font-weight: var(--font-weight-medium);
+}
+
+.custom-btn-group .link:hover {
+  color: var(--link-hover-color);
+}
+
+
+/*---------------------------------------
+  SITE HEADER        
+-----------------------------------------*/
+.site-header {
+  position: absolute;
+  z-index: 22;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.site-header .container {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: var(--border-radius-large);
+  padding: 15px 25px;
+  max-height: 70px;
+}
+
+.site-header-text {
+  color: var(--white-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+.site-header-text span {
+  margin-left: 10px;
+}
+
+.site-header .social-icon {
+  max-height: 35px;
+}
+
+.offcanvas {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+}
+
+.offcanvas.offcanvas-end {
+  border-left: 0;
+}
+
+.offcanvas-header .btn-close {
+  filter: brightness(0) invert(1);
+  transition: all 0.3s;
+}
+
+.offcanvas-header .btn-close:hover {
+  transform: rotate(180deg);
+}
+
+.offcanvas-icon {
+  font-size: var(--h3-font-size);
+  color: var(--white-color);
+  margin-left: 15px;
+}
+
+.offcanvas nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.offcanvas nav ul li {
+  list-style: none;
+  display: block;
+}
+
+.offcanvas nav ul li a {
+  color: var(--white-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-medium);
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.offcanvas nav ul li a:hover,
+.offcanvas nav ul li a.active {
+  color: var(--link-hover-color);
+}
+
+
+/*---------------------------------------
+  HERO        
+-----------------------------------------*/
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 675px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero-bg {
+  background-image: url('../images/people-practicing-social-integration.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-bg::after {
+  content: "";
+  background: linear-gradient(to top, var(--dark-color), transparent 200%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hero-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section small {
+  color: var(--primary-color);
+  display: block;
+  font-size: var(--btn-font-size);
+  font-style: italic;
+  position: relative;
+  padding-left: 75px;
+}
+
+.hero-section small::before {
+  content: "";
+  background-color: var(--white-color);
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, 0);
+}
+
+.video-wrap {
+  z-index: -100;
+}
+
+.custom-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-title {
+  color: var(--white-color);
+}
+
+
+/*---------------------------------------
+  COUNTDOWN              
+-----------------------------------------*/
+.countdown {
+  padding-left: 0;
+}
+
+.countdown-title {
+  color: var(--white-color);
+}
+
+.countdown-item {
+  list-style: none;
+  flex: 0 0 13%;
+  margin: 15px;
+}
+
+.countdown-text {
+  color: var(--section-bg-color);
+  font-size: var(--p-font-size);
+  font-style: italic;
+}
+
+
+/*---------------------------------------
+  MODAL EMAIL FORM        
+-----------------------------------------*/
+.modal-content {
+  background-color: var(--dark-color);
+  border-radius: 0;
+  position: relative;
+}
+
+.modal-content::after {
+  content: "";
+  background-color: var(--custom-btn-bg-color);
+  border: 50px solid var(--secondary-color);
+  border-radius: 100%;
+  position: absolute;
+  top: -100px;
+  right: -120px;
+  width: 250px;
+  height: 250px;
+  pointer-events: none;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 30px 40px;
+}
+
+.modal-header {
+  background-color: var(--dark-color);
+  border-radius: 0;
+  border-bottom: 0;
+  padding: 0;
+}
+
+.modal-body h2 {
+  color: var(--white-color);
+  font-size: var(--h4-font-size);
+  position: relative;
+  bottom: 30px;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+  position: relative;
+  z-index: 22;
+  top: 20px;
+  right: 20px;
+  transition: all 0.3s;
+}
+
+.modal-header .btn-close:hover {
+  transform: rotate(180deg);
+}
+
+.modal-body,
+.modal-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.modal-footer {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.modal-footer p {
+  font-size: var(--btn-font-size);
+}
+
+
+/*---------------------------------------
+  CUSTOM FORM               
+-----------------------------------------*/
+.custom-form .form-control {
+  border-radius: var(--border-radius-large);
+  border-width: 2px;
+  box-shadow: none;
+  color: var(--p-color);
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.custom-form .form-control:focus,
+.custom-form .form-control:hover {
+  border-color: var(--primary-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-floating>label {
+  padding-left: 20px;
+}
+
+.custom-form button[type="submit"] {
+  background: var(--custom-btn-bg-color);
+  border: none;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:focus {
+  background: var(--custom-btn-bg-hover-color);
+  border-color: transparent;
+}
+
+.custom-form .form-check-label {
+  color: var(--p-color);
+}
+
+.contact-form .form-floating>textarea {
+  border-radius: var(--border-radius-medium);
+  height: 110px;
+}
+
+.login-form .custom-btn {
+  font-family: var(--heading-font-family);
+  padding: 10.25px 35px;
+  font-size: var(--p-font-size);
+}
+
+
+/*---------------------------------------
+  SOCIAL ICON               
+-----------------------------------------*/
+.social-icon {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icon-item {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.social-icon-link {
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--btn-font-size);
+  display: block;
+  margin-right: 5px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 36px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.social-icon-link:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .site-header .social-icon {
+    display: none !important;
+  }
+
+  .offcanvas-icon {
+    margin-left: 10px;
+  }
+
+  .countdown-item {
+    margin: 10px;
+  }
+}
+
